@@ -4,7 +4,7 @@ import { patientService } from '../../services/api';
 import { toast } from 'react-toastify';
 
 // API base URL - must match the one in api.js
-const API_BASE_URL = 'http://localhost:8080';
+const API_BASE_URL = 'https://hospital-backend-production-fa32.up.railway.app';
 
 const UpdateProfile = () => {
   // Initial empty profile - will be populated from localStorage

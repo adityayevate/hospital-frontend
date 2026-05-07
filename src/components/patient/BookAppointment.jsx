@@ -400,7 +400,7 @@ const BookAppointment = () => {
       // Use XMLHttpRequest for more direct control
       try {
         const xhr = new XMLHttpRequest();
-        xhr.open('POST', 'http://localhost:8080/api/appointments', true);
+        xhr.open('POST', 'https://hospital-backend-production-fa32.up.railway.app/api/appointments', true);
         xhr.setRequestHeader('Content-Type', 'application/json');
         xhr.onload = function() {
           if (xhr.status >= 200 && xhr.status < 300) {
@@ -424,7 +424,7 @@ const BookAppointment = () => {
             console.log("Trying with all fields and exact formats:", fullData);
             
             // Use direct fetch as alternative
-            fetch('http://localhost:8080/api/appointments', {
+            fetch('https://hospital-backend-production-fa32.up.railway.app/api/appointments', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',

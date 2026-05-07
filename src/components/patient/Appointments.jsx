@@ -258,7 +258,7 @@ const Appointments = () => {
       }
       
       // Use a direct API call to the server
-      const response = await fetch(`http://localhost:8080/api/appointments/${idToUse}/status?status=CANCELLED`, {
+      const response = await fetch(`https://hospital-backend-production-fa32.up.railway.app/api/appointments/${idToUse}/status?status=CANCELLED`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

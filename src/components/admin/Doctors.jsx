@@ -193,7 +193,7 @@ const Doctors = () => {
                         {doctor.picture ? (
                           <img
                             className="h-10 w-10 rounded-full object-cover"
-                            src={`http://localhost:8080${doctor.picture}`}
+                            src={`https://hospital-backend-production-fa32.up.railway.app`}
                             alt={doctor.drName}
                             onError={(e) => {
                               e.target.onerror = null;
