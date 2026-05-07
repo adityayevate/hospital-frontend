@@ -1,6 +1,15 @@
 import axios from 'axios';
+console.log("API URL:", api.defaults.baseURL);
 
-export const API_BASE_URL = 'https://hospital-backend-production-fa32.up.railway.app';
+const api = axios.create({
+  baseURL: 'https://hospital-backend-production-fa32.up.railway.app/api',
+  headers: {
+    'Content-Type': 'application/json'
+  }
+});
+
+export default api;
+
 
 // Create axios instance with default config
 const api = axios.create({
